@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://chris10453.github.io/sitemap.xml
