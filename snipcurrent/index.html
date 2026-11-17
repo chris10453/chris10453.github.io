@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--
+  SnipCurrent — link hub (the destination every profile bio points to)
+  Built: Nov 12, 2026 (team-side prep, blocker 2). Static, self-contained, no external assets.
+  Brand: SNIP (white) / CURRENT (orange) wordmark on ink navy, play-mark motif — matches
+  ~/workspace/frontier-mining/snipcurrent-profile-kit/ (avatar / banner / cover).
+
+  DEPLOY CHECKLIST (account day, claim clipping/account-day-setup):
+  1. Replace every href="#" below with the live URL for its data-slot, in this order:
+     slot=yt, slot=tt, slot=ig, slot=fb  → the four @snipcurrent profile URLs
+     slot=whop-profile                   → SnipCurrent's Whop clipper profile
+     slot=vyro-profile                   → SnipCurrent's Vyro clipper profile
+     slot=campaign-s9 / campaign-vyro / campaign-memo → live campaign pages (URLs in
+        ~/workspace/frontier-mining/snipcurrent-profile-kit/join-order.md + lane file §2.1)
+  2. GTA section: flip the status pill from "LAUNCHES NOV 19" to live campaign links the
+     moment the GTA watch (gta-watch-log.md) reports a live brief — never before; pre-launch
+     "GTA 6 gameplay" is leak material and is never linked here.
+  3. Host on any static host / link-in-bio page the team controls; the URL that lands goes
+     into every platform's link field (bios.md in the profile kit).
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SnipCurrent — The best moments in gaming, clipped daily</title>
+<meta name="description" content="SnipCurrent clips the best moments in gaming — the plays, reactions, and chaos worth watching — and posts them daily.">
+<style>
+  :root{
+    --ink:#0a0f1e;        /* ink navy */
+    --ink-2:#111a30;
+    --orange:#ff7a1a;     /* CURRENT orange */
+    --white:#ffffff;
+    --muted:#9fb0cc;
+    --card:#131f3a;
+    --line:#24355c;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--ink);color:var(--white);
+       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       min-height:100vh;display:flex;justify-content:center}
+  main{width:100%;max-width:480px;padding:32px 20px 48px}
+  header{text-align:center;margin-bottom:28px}
+  .mark{display:inline-flex;align-items:center;gap:10px;margin-bottom:14px}
+  .play{width:0;height:0;border-top:11px solid transparent;border-bottom:11px solid transparent;
+        border-left:18px solid var(--orange)}
+  .wordmark{font-size:34px;font-weight:800;letter-spacing:.5px;line-height:1}
+  .wordmark .cur{color:var(--orange)}
+  .tagline{color:var(--muted);font-size:15px;margin-top:6px}
+  h2{font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;
+     color:var(--muted);margin:26px 0 10px}
+  a.btn{display:flex;align-items:center;justify-content:space-between;gap:12px;
+        background:var(--card);border:1px solid var(--line);border-radius:12px;
+        color:var(--white);text-decoration:none;padding:14px 16px;margin-bottom:10px;
+        font-size:16px;font-weight:600}
+  a.btn:hover{border-color:var(--orange)}
+  a.btn .sub{display:block;font-size:12.5px;font-weight:400;color:var(--muted);margin-top:2px}
+  a.btn .go{color:var(--orange);font-weight:800}
+  .pill{font-size:11px;font-weight:700;letter-spacing:1px;padding:4px 8px;border-radius:999px;
+        background:var(--orange);color:var(--ink);white-space:nowrap}
+  .pill.dim{background:var(--ink-2);color:var(--muted);border:1px solid var(--line)}
+  .gta{background:linear-gradient(160deg,#1a1030,#0a0f1e 70%);border:1px solid #3a2a5c;
+       border-radius:14px;padding:18px 16px}
+  .gta h3{font-size:19px;margin-bottom:6px}
+  .gta p{color:var(--muted);font-size:14px;line-height:1.5}
+  footer{text-align:center;color:var(--muted);font-size:12.5px;margin-top:34px;line-height:1.6}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="mark"><span class="play" aria-hidden="true"></span>
+      <span class="wordmark">SNIP<span class="cur">CURRENT</span></span></div>
+    <p class="tagline">The best moments in gaming, clipped daily. 🎮</p>
+  </header>
+
+  <!-- ===== Watch the clips ===== -->
+  <h2>Watch the clips</h2>
+  <a class="btn" href="#" data-slot="tt">TikTok <span class="go">@snipcurrent →</span></a>
+  <a class="btn" href="#" data-slot="ig">Instagram <span class="go">@snipcurrent →</span></a>
+  <a class="btn" href="#" data-slot="yt">YouTube <span class="go">@snipcurrent →</span></a>
+  <a class="btn" href="#" data-slot="fb">Facebook <span class="go">SnipCurrent →</span></a>
+
+  <!-- ===== GTA VI launch ===== -->
+  <h2>GTA VI — launch week</h2>
+  <section class="gta">
+    <h3>🌴 GTA VI launches Nov 19, 2026</h3>
+    <p>Launch-week clips from licensed streamer campaigns land here the moment the
+       campaigns go live. New clips every day, all launch week.</p>
+    <!-- slot=gta-campaign: link live campaign clip collections here at launch -->
+    <p style="margin-top:10px"><span class="pill">LAUNCHES NOV 19</span></p>
+  </section>
+
+  <!-- ===== Campaigns we clip for ===== -->
+  <h2>Campaigns we clip for</h2>
+  <a class="btn" href="#" data-slot="campaign-s9">S9 Trades Clips
+    <span><span class="sub">via Whop Content Rewards</span></span><span class="go">→</span></a>
+  <a class="btn" href="#" data-slot="campaign-vyro">Meet Vyro
+    <span><span class="sub">via Content Rewards / Vyro</span></span><span class="go">→</span></a>
+  <a class="btn" href="#" data-slot="campaign-memo">Memo AI Voice Notes
+    <span><span class="sub">via Whop Content Rewards</span></span><span class="go">→</span></a>
+
+  <!-- ===== Work with us / clipper profiles ===== -->
+  <h2>Our clipper profiles</h2>
+  <a class="btn" href="#" data-slot="whop-profile">Whop — Content Rewards
+    <span class="go">SnipCurrent →</span></a>
+  <a class="btn" href="#" data-slot="vyro-profile">Vyro
+    <span class="go">SnipCurrent →</span></a>
+
+  <footer>
+    Clips are made under campaign briefs from the creators and programs we work with.<br>
+    Business inquiries: use the brand email on our YouTube channel.
+  </footer>
+</main>
+</body>
+</html>
